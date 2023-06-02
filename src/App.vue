@@ -1,15 +1,15 @@
 <template>
-  <div>hi</div>
-  <self />
+  <div>
+    导航栏 |
+    <router-link to="/">self</router-link> |
+    <router-link to="/xxx">NewSelf</router-link>
+  </div>
+  <hr />
+  <router-view />
 </template>
 
 <script>
-import self from "./components/self.vue";
-
 export default {
   name: "App",
-  components: {
-    self: self,
-  },
 };
 </script>
