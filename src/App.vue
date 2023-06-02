@@ -8,7 +8,7 @@ export default {
   name: "App",
   setup() {
     const menuVisible = ref(false);
-    provide("menuVisible", menuVisible); // get
+    provide("menuVisible", menuVisible); // set
   },
 };
 </script>
