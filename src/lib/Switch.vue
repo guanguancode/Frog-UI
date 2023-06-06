@@ -1,5 +1,9 @@
 <template>
-  <button @click="toggle" :class="{ checked: value }">
+  <button
+    class="frog-switch"
+    @click="toggle"
+    :class="{ 'frog-checked': value }"
+  >
     <span></span>
   </button>
 </template>
@@ -22,7 +26,7 @@ export default {
 <style lang="scss" scoped>
 $h: 22px;
 $h2: $h - 4px;
-button {
+.frog-switch {
   height: $h;
   width: $h * 2;
   border: none;
@@ -39,7 +43,7 @@ button {
     border-radius: $h2 / 2;
     transition: all 250ms;
   }
-  &.checked {
+  &.frog-checked {
     background: #1890ff;
     > span {
       left: calc(100% - #{$h2} - 2px);
@@ -53,7 +57,7 @@ button {
       width: $h2 + 4px;
     }
   }
-  &.checked:active {
+  &.frog-checked:active {
     > span {
       width: $h2 + 4px;
       margin-left: -4px;
