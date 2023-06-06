@@ -59,7 +59,7 @@ export default {
   > aside {
     flex-grow: 1;
     padding: 16px;
-    background: white;
+    background: rgb(95, 216, 243);
   }
 }
 aside {
