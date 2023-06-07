@@ -7,7 +7,15 @@
     :closeOnClickOverlay="false"
     :ok="f1"
     :cancel="f2"
-  ></Dialog>
+  >
+    <template v-slot:content>
+      <strong>hi</strong>
+      <div>你好吖</div>
+    </template>
+    <template v-slot:title>
+      <strong> 这是标题 </strong>
+    </template>
+  </Dialog>
 </template>
 
 <script lang="ts">
