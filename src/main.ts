@@ -1,5 +1,6 @@
 import "./lib/frog.scss";
 import "./index.scss";
+import "./lib/svg.js";
 import { createApp } from "vue";
 import App from "./App.vue";
 import { router } from "./router";
