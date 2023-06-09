@@ -1,8 +1,8 @@
 # 开始使用
 
-请先[安装](#/doc/install)本组件库。
+请先请[安装](#/doc/install)本组件库。
 
-然后在你的代码中写入下面的代码
+然后需要在你的代码中运行以下代码
 
 ```
 import {Button, Tabs, Switch, Dialog} from "Frog-ui"
