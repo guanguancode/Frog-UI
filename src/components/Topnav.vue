@@ -47,7 +47,7 @@ $color: #007974;
   width: 100%;
   padding: 16px;
   position: relative;
-  z-index: 10;
+  z-index: 20;
   justify-content: center;
   align-items: center;
   > .logo {
