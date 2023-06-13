@@ -14,8 +14,9 @@
   },
   "devDependencies": {
     "@vue/compiler-sfc": "3.2.20",
+    "esbuild": "0.14.42",
+    "gulp-uglify": "^3.0.2",
     "sass": "1.26.10",
-    "vite": "1.0.0-rc.1",
-    "esbuild": "0.14.42"
+    "vite": "1.0.0-rc.1"
   }
 }

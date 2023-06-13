@@ -112,17 +112,20 @@ $border-color: #d9d9d9;
   > main {
     padding: 12px 16px;
   }
+
   > footer {
     border-top: 1px solid $border-color;
     padding: 12px 16px;
     text-align: right;
   }
+
   &-close {
     position: relative;
     display: inline-block;
     width: 16px;
     height: 16px;
     cursor: pointer;
+
     &::before,
     &::after {
       content: "";
@@ -133,9 +136,11 @@ $border-color: #d9d9d9;
       top: 50%;
       left: 50%;
     }
+
     &::before {
       transform: translate(-50%, -50%) rotate(-45deg);
     }
+
     &::after {
       transform: translate(-50%, -50%) rotate(45deg);
     }
