@@ -2,7 +2,7 @@
   <div class="topnav">
     <router-link to="/" class="logo">
       <svg class="icon">
-        <use xlink:href="#icon-king"></use>
+        <use xlink:href="#icon-frog"></use>
       </svg>
     </router-link>
     <ul class="menu">
@@ -12,9 +12,11 @@
     </ul>
     <svg
       v-if="toggleMenuButtonVisible"
-      class="toggleAside"
+      class="icon toggleAside"
       @click="toggleMenu"
-    ></svg>
+    >
+      <use xlink:href="#icon-menu"></use>
+    </svg>
   </div>
 </template>
 
@@ -74,7 +76,7 @@ $color: #007974;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    background: fade-out(black, 0.9);
+    // background: fade-out(black, 0.9);
   }
   @media (max-width: 500px) {
     > .menu {
