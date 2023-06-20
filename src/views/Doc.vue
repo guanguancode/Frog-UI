@@ -52,12 +52,19 @@ export default {
 
 <style lang="scss" scoped>
 $aside-index: 10;
+$layout-background: linear-gradient(
+  145deg,
+  rgb(227, 255, 253) 0px,
+  rgb(183, 233, 230) 100%
+);
 .layout {
   display: flex;
   flex-direction: column;
   height: 100vh;
   > .nav {
     flex-shrink: 0;
+    background: $layout-background;
+    box-shadow: 0 5px 5px rgba(51, 51, 51, 0.1);
   }
 
   > .content {
@@ -66,6 +73,7 @@ $aside-index: 10;
     padding-left: 156px;
     @media (max-width: 500px) {
       padding: 0;
+      // padding-left: 0;
     }
   }
 }
@@ -73,21 +81,27 @@ $aside-index: 10;
 .content {
   display: flex;
   > aside {
-    flex-grow: 1;
-    padding: 16px;
-    background: rgb(95, 216, 243);
+    flex-shrink: 0;
+    padding: 100px 0;
   }
 
   > main {
     flex-grow: 1;
-    padding: 16px;
-    background: white;
+    padding: 48px 20px 20px 100px;
+    background-color: #f9f9f9;
+  }
+  @media (max-width: 500px) {
+    > main {
+      padding: 100px 0px 16px 16px;
+      width: 100%;
+      overflow: auto;
+    }
   }
 }
 
 aside {
-  background: lightblue;
-  width: 150px;
+  background: $layout-background;
+  width: 156px;
   padding: 16px 0;
   position: fixed;
   top: 0;
@@ -98,12 +112,13 @@ aside {
 
   > h2 {
     margin-bottom: 4px;
+    padding: 4px 16px;
   }
   > ol {
     > li {
       > a {
         display: block;
-        padding: 4px 16px;
+        padding: 6px 16px;
         text-decoration: none;
       }
       .router-link-active {

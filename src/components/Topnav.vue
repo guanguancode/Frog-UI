@@ -48,7 +48,7 @@ $color: #007974;
   left: 0;
   width: 100%;
   padding: 16px;
-  position: relative;
+  position: fixed;
   z-index: 20;
   justify-content: center;
   align-items: center;
@@ -56,8 +56,8 @@ $color: #007974;
     max-width: 6em;
     margin-right: auto;
     > svg {
-      width: 32px;
-      height: 32px;
+      width: 40px;
+      height: 40px;
     }
   }
   > .menu {
@@ -66,6 +66,7 @@ $color: #007974;
     flex-wrap: nowrap;
     > li {
       margin: 0 1em;
+      font-size: 24px;
     }
   }
   > .toggleAside {

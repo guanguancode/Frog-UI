@@ -53,7 +53,6 @@ $color: #007974;
 
 .topnavAndBanner {
   background: linear-gradient(145deg, #e3fffd 0, #b7e9e6 100%);
-
   clip-path: ellipse(80% 60% at 50% 40%);
 }
 
@@ -65,7 +64,7 @@ $color: #007974;
 
 .features {
   margin: 64px auto;
-  padding: 0 16px;
+  padding: 4px 16px;
 
   @media (min-width: 800px) {
     width: 800px;
@@ -120,6 +119,7 @@ $color: #007974;
 
 .banner {
   padding: 80px 0;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,7 +127,7 @@ $color: #007974;
   color: $color;
 
   > .actions {
-    padding: 8px 0;
+    padding: 15px 0;
 
     a {
       margin: 8px;
