@@ -1,6 +1,6 @@
 import "./lib/frog.scss";
 import "./index.scss";
-import "./lib/svg.js";
+import "./assets/svg.js";
 import "github-markdown-css";
 import Markdown from "./components/Markdown.vue";
 import { createApp } from "vue";
