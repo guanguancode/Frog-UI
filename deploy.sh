@@ -5,7 +5,7 @@ git init &&
 git add . &&
 git commit -m "update" &&
 git branch -M master &&
-git remote add origin git@github.com:guanguancode/gulu-UI-1.git &&
+git remote add origingit@github.com:guanguancode/Frog-UI.git &&
 git push -f -u origin master &&
 cd -
-echo https://guanguancode.github.io/gulu-UI-1/index.html
+echo  https://guanguancode.github.io/Frog-UI/index.html
